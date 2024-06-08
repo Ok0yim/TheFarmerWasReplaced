@@ -1,0 +1,21 @@
+def go_to(x_cord,y_cord): 
+	current_x = get_pos_x()
+	current_y = get_pos_y()
+	while current_x != x_cord:
+		current_x = get_pos_x()
+		to_move = x_cord-current_x
+		if to_move < 0:
+			move_n_dir((-to_move), West)
+		elif to_move > 0:
+			move_n_dir(to_move, East)
+		elif to_move == 0:
+			pass
+	while current_y != y_cord:
+		current_y = get_pos_y()
+		to_move = y_cord-current_y
+		if to_move < 0:
+			move_n_dir((-to_move), South)
+		elif to_move > 0:
+			move_n_dir(to_move, North)
+		elif to_move == 0:
+			pass
