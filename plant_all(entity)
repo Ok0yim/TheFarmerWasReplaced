@@ -1,0 +1,11 @@
+def plant_all(entity):
+	wrld_size = get_world_size()
+	go_to(0,0)
+	for i in range(wrld_size):
+		for i in range(wrld_size):
+			if get_entity_type == None:
+				plant(entity)
+			else:
+				pass
+			move(North)
+		move(East)
