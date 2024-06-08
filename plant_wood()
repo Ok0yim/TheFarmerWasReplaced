@@ -1,0 +1,8 @@
+def plant_wood():
+	x = get_pos_x()
+	y = get_pos_y()
+	cordSum = x+y
+	if (cordSum % 2) == 1:
+		plant(Entities.Tree)
+	elif (cordSum % 2) != 1:
+		plant(Entities.Bush)
