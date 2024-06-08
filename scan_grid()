@@ -1,0 +1,12 @@
+#scans grid and stores values in list
+def scan_grid(list_name):
+	wrld_size = get_world_size()
+	list_name = []
+	for i in range(wrld_size):
+		for i in range(wrld_size):
+			if get_entity_type() == None:
+				x = get_pos_x()
+				y = get_pos_y()
+				list_name.append([x,y])
+			move(North)
+		move(East)
