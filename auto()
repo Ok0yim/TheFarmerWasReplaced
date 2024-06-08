@@ -1,0 +1,14 @@
+#check plant protocol
+		if plant_protocol == "Auto":
+			#check for harvest
+			if can_harvest():
+				harvest()
+			#check amounts	
+			if num_items(Items.Hay) < threshold:
+				plant_hay()
+			elif num_items(Items.Wood) < threshold:
+				plant_wood()
+			elif num_items(Items.Carrot) < threshold:
+				plant_carrots()
+			else:
+				plant_protocol = "pumpkins"
