@@ -1,0 +1,11 @@
+def till_all():
+	wrld_size = get_world_size()
+	for i in range(wrld_size):
+		for i in range(wrld_size):
+			if get_ground_type() == Grounds.Turf:
+				till()
+			else:
+				pass
+			move(North)
+		move(East)
+	
