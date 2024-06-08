@@ -1,0 +1,6 @@
+#eventually make dictionary
+def check_inventory():
+	items_list = item_list()
+	inventory_check = []
+	for i in range(len(items_list)):
+		inventory_check.append([items_list[i],num_items(items_list[i])])
