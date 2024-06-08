@@ -1,0 +1,7 @@
+def plant_pumpkins():
+	if num_items(Items.Pumpkin_Seed) == 0:
+		trade(Items.Pumpkin_Seed,5)
+	#check ground
+	if get_ground_type() == Grounds.Turf:
+		till()
+	plant(Entities.Pumpkin)
