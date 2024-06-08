@@ -1,0 +1,13 @@
+#eventually make dictionary
+def check_thresholds(threshold):
+	inventory = []
+	threshold_check = []
+	reading = []
+	items_list = item_list()
+	for i in range(len(items_list)):
+		inventory.append(num_items(items_list[i]))
+		if num_items(items_list[i]) >= threshold:
+			check = 0
+		elif num_items(items_list[i]) < threshold:
+			check = 1
+		threshold_check.append([items_list[i],check])
