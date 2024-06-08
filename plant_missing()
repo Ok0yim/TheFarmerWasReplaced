@@ -1,0 +1,8 @@
+def plant_missing(list_name):
+	for number in list_name:
+		coord = number
+		x = coord[0]
+		y = coord[1]
+		go_to(x,y)
+		if get_entity_type() == None:
+			plant_pumpkins()
