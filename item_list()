@@ -1,0 +1,16 @@
+def item_list(id):
+	item_list = [
+	Items.Carrot,
+	Items.Carrot_Seed,
+	Items.Empty_Tank,
+	Items.Fertilizer,
+	Items.Gold,
+	Items.Hay,
+	Items.Power,
+	Items.Pumpkin,
+	Items.Pumpkin_Seed,
+	Items.Sunflower_Seed,
+	Items.Water_Tank,
+	Items.Wood,
+	]
+	return item_list[id]
