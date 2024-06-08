@@ -1,0 +1,4 @@
+#run to reset field
+clear()
+go_to(0,0)
+till_all()
