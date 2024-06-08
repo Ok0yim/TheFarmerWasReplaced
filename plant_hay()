@@ -1,0 +1,5 @@
+def plant_hay():
+	if get_entity_type() == None:
+		plant(Entities.Grass)
+	if can_harvest() == True:
+		harvest()
