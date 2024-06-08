@@ -1,0 +1,13 @@
+def plant_carrots():
+	#check seeds
+	if num_items(Items.Carrot_Seed) <= 5:
+		#check trade
+		if trade(Items.Carrot_Seed, 5) == None:
+			plant_wood()
+		else:
+			trade(Items.Carrot_Seed, 5)
+	#check ground
+	if get_ground_type() == Grounds.Turf:
+		till()
+	#plant carrots	
+	plant(Entities.Carrots)
