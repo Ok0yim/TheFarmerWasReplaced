@@ -1,0 +1,23 @@
+def scan_for_harvest():
+	#define lists and variables
+	to_harvest = []
+	wrld_size = get_world_size()
+	
+	#scan grid for unplanted and store in list
+	for i in range(wrld_size):
+			for i in range(wrld_size):
+				if can_harvest() == True:
+					to_harvest.append(1)
+				elif can_harvest() == False:
+					to_harvest.append(0)
+				move(North)
+			move(East)
+	length = len(to_harvest)
+	sum = 0
+	for number in to_harvest:
+		sum += number
+	if sum == length:
+		harvest()
+	elif sum != length:
+		scan_for_harvest()
+	
