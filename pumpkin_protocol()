@@ -1,0 +1,15 @@
+def pumpkin_protocol():
+	#reset to 0
+	clear()
+	till_all()
+	plant_all(Entities.Pumpkin)
+	while True:	
+		go_to(0,0)
+		unplanted = scan_for_unplanted()
+		quick_print(unplanted)
+		if len(unplanted) != 0:
+			plant_missing(unplanted)
+		elif len(unplanted) == 0:
+			scan_for_harvest()
+		for i in range(5):
+			do_a_flip()
