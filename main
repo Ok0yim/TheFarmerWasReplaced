@@ -1,0 +1,24 @@
+#reset plot
+till_all()
+
+#define variables
+set_threshold = 4000
+wrld_size = get_world_size()
+#main loop
+while True:
+	
+	for i in range(wrld_size):
+		if check_threshold_id(5) == False: #check hay
+			plant_hay()
+		elif check_threshold_id(11) == False: #check wood
+			plant_wood()
+		elif check_threshold_id(0) == False: #check carrots
+			plant_carrots()
+		elif check_threshold_id(7) == False: #check pumpkins
+			pumpkin_protocol()
+		else:
+			break
+		#move to next plot
+		move(North)
+	move(East)
+	
