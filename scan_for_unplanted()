@@ -1,0 +1,15 @@
+def scan_for_unplanted():
+	#define lists and variables
+	unplanted = []
+	wrld_size = get_world_size()
+	
+	#scan grid for unplanted and store in list
+	for i in range(wrld_size):
+			for i in range(wrld_size):
+				if get_entity_type() == None:
+					x = get_pos_x()
+					y = get_pos_y()
+					unplanted.append([x,y])
+				move(North)
+			move(East)
+	return unplanted
