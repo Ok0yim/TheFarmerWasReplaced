@@ -1,0 +1,18 @@
+def data_lookup(item):
+	item = item
+	item_list = item_list()
+	for i in range(len(item)):
+		h = i
+		for i in range(len(item_list)):
+			if item[h] == item_list[i]:
+				if num_items(item_list[i]) >= set_threshold:
+					at_threshold = "Yes"
+				else:
+					at_threshold = "No"
+				print_line()
+				quick_print("Item ID: ", i)
+				quick_print("Item: ", item_list[i])
+				quick_print("Amount: ", num_items(item_list[i]))
+				quick_print("At Threshold? ",at_threshold)
+			else:
+				pass
