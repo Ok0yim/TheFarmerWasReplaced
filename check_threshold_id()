@@ -1,0 +1,5 @@
+def check_threshold_id(id):
+	if num_items(item_list(id)) >= set_threshold:
+		return True
+	else:
+		return False
